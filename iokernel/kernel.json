@@ -1,0 +1,6 @@
+{
+  "display_name": "Io",
+  "language": "io",
+  "argv": ["python", "/root/iio/iokernel.py", "-f", "{connection_file}"],
+  "codemirror_mode": "scheme"
+}
