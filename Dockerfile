@@ -27,7 +27,7 @@ RUN git clone --branch 2015.11.11 --depth 1 https://github.com/stevedekorte/io.g
 
 WORKDIR $HOME/iio
 ADD . $HOME/iio
-RUN jupyter kernelspec install iokernel
+RUN cd kernels && jupyter kernelspec install io
 
 EXPOSE 8888
 
