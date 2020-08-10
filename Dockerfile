@@ -12,13 +12,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     g++ \
     gcc \
     libyajl-dev \
-    libpython3.4-dev \
+    libpython3-dev \
     libgmp-dev \
     libmemcached-dev \
     make \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
-RUN git clone --branch 2015.11.11 --depth 1 git@github.com:IoLanguage/io.git ~/io \
+RUN git clone --recursive https://github.com/IoLanguage/io.git \
     && mkdir -p ~/io/build \
     && cd ~/io/build \
     && cmake .. \

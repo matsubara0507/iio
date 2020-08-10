@@ -4,5 +4,5 @@ Io kernel for Jupyter/IPython Notebook
 ## Run
 
 ```
-$ docker run -p 8888:8888 matsubara0507/iio
+$ docker run -p 8888:8888 kyagrd/iio
 ```
