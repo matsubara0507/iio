@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     make \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
-RUN git clone --branch 2015.11.11 --depth 1 https://github.com/stevedekorte/io.git ~/io \
+RUN git clone --branch 2015.11.11 --depth 1 git@github.com:IoLanguage/io.git ~/io \
     && mkdir -p ~/io/build \
     && cd ~/io/build \
     && cmake .. \
